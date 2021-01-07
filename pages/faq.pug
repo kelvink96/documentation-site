@@ -1,0 +1,59 @@
+extends layout
+
+append links
+	link(rel='stylesheet' href='../assets/css/faq.css')
+	title FAQs
+
+block content
+	.container.p-5.mx-auto
+		section.section.text-center
+			h2 Frequently asked questions (FAQs)
+		section.section
+			.input-group.input-group-lg
+				span.input-group-text
+					i.fas.fa-search
+				input(type='text' placeholder='search frequently asked questions').form-control
+		section.section
+			.accordion#faqAccordion
+				.accordion-item
+					h2.accordion-header#headingOne
+						button.accordion-button(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Arcu cursus vitae congue
+					#collapseOne.accordion-collapse.collapse.show(aria-labelledby="headingOne" data-bs-parent="#faqAccordion")
+						.accordion-body
+							p Aliquam vestibulum morbi blandit cursus. Leo urna molestie at elementum eu. Gravida arcu ac tortor dignissim convallis aenean et tortor. Porta nibh venenatis cras sed. Porta non pulvinar neque laoreet suspendisse interdum. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+				.accordion-item
+					h2.accordion-header#headingTwo
+						button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo") Placerat duis ultricies lacus
+					#collapseTwo.accordion-collapse.collapse
+						.accordion-body
+							p Ac tincidunt vitae semper quis. Diam sollicitudin tempor id eu nisl nunc mi. Vitae turpis massa sed elementum. Fringilla ut morbi tincidunt augue interdum velit euismod. In pellentesque massa placerat duis ultricies lacus. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Nisl nisi scelerisque eu ultrices.
+				.accordion-item
+					h2.accordion-header#headingThree
+						button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree") Interdum velit euismod
+					#collapseThree.accordion-collapse.collapse
+						.accordion-body
+							p in pellentesque massa placerat duis ultricies lacus. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Adipiscing enim eu turpis egestas pretium aenean pharetra. Tempus imperdiet nulla malesuada pellentesque.
+				.accordion-item
+					h2.accordion-header#headingFour
+						button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour") Nibh sed pulvinar
+					#collapseFour.accordion-collapse.collapse
+						.accordion-body
+							p Lacus luctus accumsan tortor posuere ac ut. Congue mauris rhoncus aenean vel elit scelerisque mauris. Nulla at volutpat diam ut venenatis tellus. Odio aenean sed adipiscing diam. Nisl rhoncus mattis rhoncus urna neque viverra justo nec.
+				.accordion-item
+					h2.accordion-header#headingFive
+						button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive") Morbi tincidunt
+					#collapseFive.accordion-collapse.collapse
+						.accordion-body
+							p Non consectetur a erat nam at lectus urna duis convallis. Amet nulla facilisi morbi tempus iaculis urna id. Arcu risus quis varius quam quisque id diam. Aliquet bibendum enim facilisis gravida. Id porta nibh venenatis cras sed felis. Amet risus nullam eget felis eget nunc. Morbi tempus iaculis urna id.
+				.accordion-item
+					h2.accordion-header#headingSix
+						button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix") Sed euismod nisi
+					#collapseSix.accordion-collapse.collapse
+						.accordion-body
+							p Mauris augue neque gravida in fermentum. Tellus cras adipiscing enim eu. Dictumst quisque sagittis purus sit. Vitae auctor eu augue ut lectus arcu. Auctor urna nunc id cursus metus aliquam eleifend mi. Nunc mattis enim ut tellus elementum sagittis. Aliquam nulla facilisi cras fermentum. Blandit cursus risus at ultrices. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo.
+				.accordion-item
+					h2.accordion-header#headingSeven
+						button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven") Faucibus pulvinar
+					#collapseSeven.accordion-collapse.collapse
+						.accordion-body
+							p Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Eu feugiat pretium nibh ipsum consequat. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Ornare lectus sit amet est placerat. Turpis massa tincidunt dui ut ornare. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Aliquam id diam maecenas ultricies. Lectus arcu bibendum at varius vel pharetra vel. Mattis aliquam faucibus purus in massa tempor nec feugiat. Suspendisse interdum consectetur libero id.

@@ -1,9 +1,122 @@
 extends layout
 
 append links
-	link(rel='stylesheet' href='../vendors/flag-icons/css/flag-icon.min.css')
 	link(rel='stylesheet' href='../assets/css/home.css')
 	title Home
 
 block content
+	.container.p-5.mx-auto
+		section.section.hero-section
+			.row
+				.col-md-4.image-wrapper
+					img(src='../assets/images/manual1.svg')
+				.col-md-6.text-wrapper.pe-5
+					h2 documentation
+					p here you will find all the information you need regarding our Application and you can also ask for&nbsp;
+						a(href='#') support.
+		section.section.features-section
+			.container
+				.row
+					.col-md-6
+						.card
+							.card-header
+								.row
+									.col-md-3
+										img(src='../assets/images/watch.svg')
+									.col-md-9
+										h4 quick start
+										p our quickstarts help you get something
+							.card-body
+								.list-group.list-group-flush
+									a(href='#').list-group-item
+										i.far.fa-square
+										| funnies
+									a(href='#').list-group-item
+										i.far.fa-square
+										| tracking software
+									a(href='#').list-group-item
+										i.far.fa-square
+										| clients
+					.col-md-6
+						.card
+							.card-header
+								.row
+									.col-md-3
+										img(src='../assets/images/laptop.svg')
+									.col-md-9
+										h4 platform basics
+										p basic principles of working with the platform
+							.card-body
+								.list-group.list-group-flush
+									a(href='#').list-group-item
+										i.far.fa-square
+										| create offer
+									a(href='#').list-group-item
+										i.far.fa-square
+										| use filters
+									a(href='#').list-group-item
+										i.far.fa-square
+										| conversion
+					.col-md-6
+						.card
+							.card-header
+								.row
+									.col-md-3
+										img(src='../assets/images/developer.svg')
+									.col-md-9
+										h4 developer guides
+										p these articles are about development basics
+							.card-body
+								.list-group.list-group-flush
+									a(href='#').list-group-item
+										i.far.fa-square
+										| design
+									a(href='#').list-group-item
+										i.far.fa-square
+										| architecture
+									a(href='#').list-group-item
+										i.far.fa-square
+										| analysis
+					.col-md-6
+						.card
+							.card-header
+								.row
+									.col-md-3
+										img(src='../assets/images/api.svg')
+									.col-md-9
+										h4 API
+										p all about working with the API
+							.card-body
+								.list-group.list-group-flush
+									a(href='#').list-group-item
+										i.far.fa-square
+										| what is API
+									a(href='#').list-group-item
+										i.far.fa-square
+										| how to use API
+									a(href='#').list-group-item
+										i.far.fa-square
+										| API - for developers
+		section.section.articles-section
+			.container
+				.row
+					.col-md-6
+						h4 popular articles&nbsp;
+							i.fas.fa-star.small
+						a(href='#').card
+							.card-body
+								p roadmap funnel tests
+						a(href='#').card
+							.card-body
+								p roadmap trading platform
+					.col-md-6
+						h4 new articles
+						a(href='#').card
+							.card-body
+								span.new-notification.sticky-top new
+								p how to add funnel
+						a(href='#').card
+							.card-body
+								span.new-notification.sticky-top new
+								p epics
 
