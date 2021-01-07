@@ -5,7 +5,20 @@ append links
 	title Getting Started
 
 block content
-	.container.p-5
+	.container.mx-auto
+		section.section.section-links
+			small.text-muted.text-center on this page
+			.list-group.list-group-flush
+				a(href='#what-is-documentio').list-group-item
+					| what does document.io do?
+				a(href='#what-is-documentio-do-for-my-users').list-group-item
+					| what can document.io do for my users?
+				a(href='#what-is-documentio-do-for-my-developers').list-group-item
+					| what can document.io do for my developers?
+				a(href='#what-is-documentio-do-for-my-business').list-group-item
+					| what can document.io do for my business?
+				a(href='#feedback').list-group-item
+					| feedback
 		.row
 			.col-md-7
 				section.section.content-section
@@ -65,8 +78,8 @@ block content
 								span No credit card required click&nbsp;
 									a(href='#') here
 									| &nbsp;to get started
-							.col-md-3.text-end
-								img(src='../assets/images/start.svg').w-75
+							.col-md-3
+								img(src='../assets/images/start.svg')
 				section.section.feedback-section
 					h4 did you find this page helpful?
 						a(href='#feedback').anchor-link#feedback #

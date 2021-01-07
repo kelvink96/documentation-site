@@ -8,6 +8,7 @@ html
 		link(rel='stylesheet' href='../vendors/flag-icons/css/flag-icon.min.css')
 		link(rel='stylesheet' href='../assets/fonts/rubik.css')
 		script(src='../vendors/bootstrap/js/bootstrap.bundle.min.js')
+		script(src='../assets/js/global.js')
 		block links
 	body
 		header
@@ -16,6 +17,41 @@ html
 			.sidebar-wrapper
 				include components/sidebar
 			.content-wrapper
+				button.btn.openbtn(onclick='openNav()') table of contents&nbsp;
+					i.fas.fa-arrow-right
+
+				#mySidebar.popup-sidebar
+					.d-block.text-end.pe-3.my-2
+						a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
+					h4.text-center table of contents
+					.nav-links
+						a(href='home.html')
+							i.fas.fa-home.fa-fw
+							| home
+						a(href='getting-started.html')
+							i.fas.fa-bolt.fa-fw
+							| getting started
+						a(href='')
+							i.fas.fa-th-large.fa-fw
+							| managing results
+						a(href='')
+							i.fas.fa-cloud-upload-alt.fa-fw
+							| sending and managing data
+						a(href='')
+							i.fas.fa-chart-pie.fa-fw
+							| getting insights and analytics
+						a(href='')
+							i.fas.fa-shield-alt.fa-fw
+							| security
+						a(href='')
+							i.fas.fa-layer-group.fa-fw
+							| scaling
+						a(href='')
+							i.fas.fa-cube.fa-fw
+							| solutions
+						a(href='#')
+							i.fas.fa-life-ring.fa-fw
+							| technical support
 				block content
 		footer
 			include components/footer

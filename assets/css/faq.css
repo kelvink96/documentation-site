@@ -25,5 +25,22 @@
 .email-us-section a {
   color: white;
 }
+.email-us-section p {
+  margin-bottom: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .d-flex {
+    display: block !important;
+  }
+  .d-flex .input-group {
+    width: 100%;
+  }
+  .d-flex button {
+    width: 100%;
+    margin-top: 1em;
+  }
+}
 
 /*# sourceMappingURL=faq.css.map */

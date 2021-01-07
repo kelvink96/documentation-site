@@ -9,6 +9,7 @@
 .nav-section {
   position: fixed;
   padding: 1em 1em 1em 2em;
+  display: block;
 }
 .nav-section small {
   text-transform: uppercase;
@@ -17,11 +18,27 @@
   margin-top: 1em;
 }
 
-.alert {
+.section-links {
+  display: none;
+}
+.section-links small {
+  text-transform: uppercase;
+}
+.section-links .list-group {
+  margin-top: 1em;
+}
+
+.get-started-section .alert {
   border: 2px solid #003399;
   color: #003399;
   background-color: white;
   padding: 2em;
+}
+.get-started-section .alert .col-md-3 {
+  text-align: right;
+}
+.get-started-section .alert .col-md-3 img {
+  width: 80%;
 }
 
 .content-section p {
@@ -30,6 +47,25 @@
 
 .pagination-section .d-flex small, .pagination-section .d-flex h4 {
   color: #003399;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-section {
+    display: none;
+  }
+
+  .section-links {
+    display: block;
+  }
+
+  .get-started-section .alert .col-md-3 {
+    text-align: center;
+  }
+  .get-started-section .alert .col-md-3 img {
+    width: 50%;
+    margin-top: 1em;
+  }
 }
 
 /*# sourceMappingURL=getting-started.css.map */

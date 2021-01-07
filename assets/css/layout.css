@@ -74,7 +74,6 @@ html, body {
 
 nav, .navbar {
   border-bottom: 1px solid #003399;
-  height: 80px;
   background-color: white;
 }
 nav .navbar-brand, .navbar .navbar-brand {
@@ -234,16 +233,98 @@ main {
 .content-wrapper {
   width: 75vw;
   background: linear-gradient(90deg, #fefefe 0%, #fafafa 70%, #f0f0f0 100%);
+  padding: 3em;
+}
+.content-wrapper .container {
+  padding: 0;
 }
 
 .section {
   margin: 0 0 4em 0;
 }
 
+.popup-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 0px 10px 0px #d8d8d8;
+  -moz-box-shadow: 0px 0px 10px 0px #d8d8d8;
+  box-shadow: 0px 0px 10px 0px #d8d8d8;
+}
+.popup-sidebar h4 {
+  color: #003399;
+}
+.popup-sidebar .nav-links a {
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  color: #003399;
+  display: block;
+  transition: 150ms;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+}
+.popup-sidebar .nav-links a i {
+  margin-right: 0.5em;
+}
+.popup-sidebar .nav-links a:hover {
+  background-color: #003399;
+  color: white;
+}
+.popup-sidebar .closebtn {
+  font-size: 2em;
+  text-decoration: none;
+  color: crimson;
+  text-align: center;
+  padding: 0.05em 0.15em;
+}
+.popup-sidebar .closebtn:hover, .popup-sidebar .closebtn:focus {
+  border: 1px solid crimson;
+  transition: all ease-in-out 200ms;
+}
+
+.openbtn {
+  cursor: pointer;
+  background-color: transparent;
+  color: #003399;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #003399;
+  display: none;
+  border-radius: 0;
+  margin: 0 0 2em 1em;
+}
+.openbtn:hover, .openbtn:focus {
+  background-color: #003399;
+  color: white;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .container, .p-5 {
-    padding: 1em !important;
+  .sidebar-wrapper {
+    display: none;
+    width: 0;
+  }
+
+  .content-wrapper {
+    width: 100vw;
+    padding: 1.5em;
+  }
+
+  .section {
+    margin-bottom: 2em;
+  }
+
+  .openbtn {
+    display: block;
   }
 }
 

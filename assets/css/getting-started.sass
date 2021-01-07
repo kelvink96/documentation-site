@@ -12,6 +12,7 @@
 .nav-section
   position: fixed
   padding: 1em 1em 1em 2em
+  display: block
 
   small
     text-transform: uppercase
@@ -19,11 +20,27 @@
   .list-group
     margin-top: 1em
 
-.alert
-  border: 2px solid $color-dark-blue
-  color: $color-dark-blue
-  background-color: white
-  padding: 2em
+.section-links
+  display: none
+
+  small
+    text-transform: uppercase
+
+  .list-group
+    margin-top: 1em
+
+.get-started-section
+  .alert
+    border: 2px solid $color-dark-blue
+    color: $color-dark-blue
+    background-color: white
+    padding: 2em
+
+    .col-md-3
+      text-align: right
+
+      img
+        width: 80%
 
 .content-section
   p
@@ -34,3 +51,19 @@
     small, h4
       color: $color-dark-blue
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .nav-section
+    display: none
+
+  .section-links
+    display: block
+
+  .get-started-section
+    .alert
+      .col-md-3
+        text-align: center
+
+        img
+          width: 50%
+          margin-top: 1em

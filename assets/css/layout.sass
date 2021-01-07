@@ -33,11 +33,91 @@ main
 .content-wrapper
   width: 75vw
   background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgba(250, 250, 250, 1) 70%, rgba(240, 240, 240, 1) 100%)
+  padding: 3em
+
+  .container
+    padding: 0
 
 .section
   margin: 0 0 4em 0
 
+.popup-sidebar
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  background-color: #fafafa
+  overflow-x: hidden
+  transition: 0.5s
+  @include box-shadow-md
+
+  h4
+    color: $color-dark-blue
+
+  .nav-links
+    a
+      margin: 0 .5em
+      padding: 0.5em 1em
+      text-decoration: none
+      font-size: 1em
+      color: $color-dark-blue
+      display: block
+      transition: 150ms
+      text-transform: capitalize
+      border: 1px solid transparent
+
+      i
+        margin-right: .5em
+
+      &:hover
+        background-color: $color-dark-blue
+        color: white
+
+  .closebtn
+    font-size: 2em
+    text-decoration: none
+    color: crimson
+    text-align: center
+    padding: .05em .15em
+
+    &:hover,
+    &:focus
+      border: 1px solid crimson
+      @include transition
+
+.openbtn
+  cursor: pointer
+  background-color: transparent
+  color: $color-dark-blue
+  border-top: none
+  border-left: none
+  border-right: none
+  border-bottom: 1px solid $color-dark-blue
+  display: none
+  border-radius: 0
+  margin: 0 0 2em 1em
+
+  &:hover,
+  &:focus
+    background-color: $color-dark-blue
+    color: white
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
-  .container, .p-5
-    padding: 1em !important
+  .sidebar-wrapper
+    display: none
+    width: 0
+
+  .content-wrapper
+    width: 100vw
+    padding: 1.5em
+
+  .section
+    margin-bottom: 2em
+
+  .openbtn
+    display: block
+
+
