@@ -1,5 +1,23 @@
+@import "mixins"
+
 .list-group
   background-color: transparent
 
   .list-group-item
     background-color: transparent
+    color: $color-dark-blue
+    text-transform: capitalize
+
+    &:hover,
+    &:focus
+      @include transition
+      border-bottom: 1px solid $color-dark-blue
+      background-color: $color-light-blue
+      color: $color-dark-blue
+
+
+  .active
+    border: 1px solid $color-dark-blue
+    background-color: $color-light-blue
+    color: $color-dark-blue
+

@@ -8,24 +8,24 @@ block content
 	.container.p-5
 		.row
 			.col-md-7
-				section.section
+				section.section.content-section
 					h2 what is document.io?
 						a(href='#what-is-documentio').anchor-link#what-is-documentio #
 					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra ipsum nunc aliquet bibendum enim. Turpis egestas pretium aenean pharetra. Velit laoreet id donec ultrices tincidunt arcu non.
 					p Egestas congue quisque egestas diam in. Scelerisque in dictum non consectetur a erat nam. Habitant morbi tristique senectus et. In massa tempor nec feugiat nisl pretium fusce id velit.
 					p Aliquet nibh praesent tristique magna sit amet purus. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et.
-				section.section
+				section.section.content-section
 					h4#what-does-documentio-do what does document.io do?
 						a(href='#what-does-documentio-do').anchor-link #
 					p Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Aliquet bibendum enim facilisis gravida neque convallis. Eget nunc scelerisque viverra mauris in aliquam sem. Etiam erat velit scelerisque in dictum non consectetur a erat.
-				section.section
+				section.section.content-section
 					h4 what can document.io do for my users?
 						a(href='#what-is-documentio-do-for-my-users').anchor-link#what-is-documentio-do-for-my-users #
 					p Mi bibendum neque egestas congue quisque egestas diam.
 					p Nisl purus in mollis nunc sed id semper risus. Morbi tempus iaculis urna id volutpat lacus laoreet non. Ut tortor pretium viverra suspendisse potenti nullam ac.
 					p Ut porttitor leo a diam sollicitudin tempor id eu nisl. Netus et malesuada fames ac turpis egestas maecenas pharetra. Volutpat lacus laoreet non curabitur gravida. Faucibus a pellentesque sit amet porttitor. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Lorem donec massa sapien faucibus et.
 					p Nibh mauris cursus mattis molestie a iaculis at erat. Dictum non consectetur a erat nam at.
-				section.section
+				section.section.content-section
 					h4 what can document.io do for my developers?
 						a(href='#what-is-documentio-do-for-my-developers').anchor-link#what-is-documentio-do-for-my-developers #
 					p Turpis massa tincidunt dui ut ornare lectus sit. Libero volutpat sed cras ornare. Sagittis eu volutpat odio facilisis mauris sit. Lectus quam id leo in vitae turpis. Semper viverra nam libero justo laoreet.
@@ -38,7 +38,7 @@ block content
 						li malesuada proin libero
 						li fermentum posuere urna
 						li morbi tincidunt augue
-				section.section
+				section.section.content-section
 					h4 what can document.io do for my business?
 						a(href='#what-is-documentio-do-for-my-business').anchor-link#what-is-documentio-do-for-my-business #
 					p Habitasse platea dictumst vestibulum rhoncus est pellentesque. Quis imperdiet massa tincidunt nunc pulvinar. Laoreet sit amet cursus sit.
@@ -49,22 +49,31 @@ block content
 						li lectus quam id leo
 					h5 more on insights and analytics
 					p Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Donec et odio pellentesque diam volutpat. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pulvinar sapien et ligula ullamcorper malesuada proin libero.
-				section.section
-					i.fas.fa-arrow-right
-					p next
-				section.section
-					.alert.alert-primary(role='alert')
-						h5 start building for free today.
-						p no credit card required click&nbsp;
-							a(href='#') here
-							| &nbsp;to get started
-				section.section
+				section.section.text-end.pagination-section
+					.d-flex.align-items-center.justify-content-end
+						a(href='').d-inline-block.me-3.text-capitalize
+							small next
+							h4 how it works
+						a(href='#').btn.btn-dark-blue-f
+							i.fas.fa-arrow-right
+				section.section.get-started-section
+					.alert(role='alert').shadow-lg
+						.row
+							.col-md-9
+								h5 start building for free today.
+								hr
+								span No credit card required click&nbsp;
+									a(href='#') here
+									| &nbsp;to get started
+							.col-md-3.text-end
+								img(src='../assets/images/start.svg').w-75
+				section.section.feedback-section
 					h4 did you find this page helpful?
 						a(href='#feedback').anchor-link#feedback #
 					.d-inline-block.text-center.w-100.my-3
-						button.btn.btn-lg.btn-outline-primary.me-2
+						button.btn.btn-lg.btn-med-blue-f.me-3
 							i.fas.fa-thumbs-up
-						button.btn.btn-lg.btn-outline-danger
+						button.btn.btn-lg.btn-grey-f
 							i.fas.fa-thumbs-down
 					form.text-center
 						.form-floating.my-3
@@ -74,12 +83,14 @@ block content
 							textarea.form-control#subject-inp(placeholder="subject" style="min-height: 150px")
 							label(for='subject-inp') what did you like about this page?
 						.d-inline-block
-							button.btn.btn-primary submit
+							button.btn.btn-dark-blue-f
+								i.fas.fa-paper-plane.me-2
+								| submit
 			.col-md-5
-				section.section
+				section.section.nav-section
 					small.text-muted on this page
 					.list-group.list-group-flush
-						a(href='#what-is-document.io').list-group-item
+						a(href='#what-is-documentio').list-group-item
 							| what does document.io do?
 						a(href='#what-is-documentio-do-for-my-users').list-group-item
 							| what can document.io do for my users?

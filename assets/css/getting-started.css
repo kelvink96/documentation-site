@@ -1,0 +1,35 @@
+.anchor-link {
+  opacity: 0;
+  color: #3366CC;
+}
+.anchor-link:hover, .anchor-link:focus {
+  opacity: 0.3;
+}
+
+.nav-section {
+  position: fixed;
+  padding: 1em 1em 1em 2em;
+}
+.nav-section small {
+  text-transform: uppercase;
+}
+.nav-section .list-group {
+  margin-top: 1em;
+}
+
+.alert {
+  border: 2px solid #003399;
+  color: #003399;
+  background-color: white;
+  padding: 2em;
+}
+
+.content-section p {
+  text-align: justify;
+}
+
+.pagination-section .d-flex small, .pagination-section .d-flex h4 {
+  color: #003399;
+}
+
+/*# sourceMappingURL=getting-started.css.map */

@@ -1,5 +1,24 @@
+@import "colors"
+@import "mixins"
+
 .sidebar-wrapper
   display: none
 
 .content-wrapper
   width: 100vw
+
+.questions-section
+  .accordion
+    .accordion-item
+      margin-bottom: .25em
+      background-color: white
+      @include box-shadow-sm
+
+.email-us-section
+  background: linear-gradient(120deg, $color-dark-blue, $color-med-blue)
+  padding: 2em
+  color: white
+  @include box-shadow-md
+
+  a
+    color: white

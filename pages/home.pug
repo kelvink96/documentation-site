@@ -10,10 +10,17 @@ block content
 			.row
 				.col-md-4.image-wrapper
 					img(src='../assets/images/manual1.svg')
-				.col-md-6.text-wrapper.pe-5
+				.col-md-8.text-wrapper
 					h2 documentation
-					p here you will find all the information you need regarding our Application and you can also ask for&nbsp;
+					p Here you will find all the information you need regarding our Application and you can also ask for&nbsp;
 						a(href='#') support.
+					.d-inline-flex
+						button.btn.btn-dark-blue-f.me-3
+							i.fas.fa-bolt.me-2
+							| interactive tutorial
+						button.btn.btn-light-blue-f
+							i.fas.fa-play.me-2
+							| document.io in 45 seconds
 		section.section.features-section
 			.container
 				.row
@@ -25,7 +32,7 @@ block content
 										img(src='../assets/images/watch.svg')
 									.col-md-9
 										h4 quick start
-										p our quickstarts help you get something
+										p.text-muted Our quickstarts help you get something
 							.card-body
 								.list-group.list-group-flush
 									a(href='#').list-group-item
@@ -45,7 +52,7 @@ block content
 										img(src='../assets/images/laptop.svg')
 									.col-md-9
 										h4 platform basics
-										p basic principles of working with the platform
+										p.text-muted Basic principles of working with the platform
 							.card-body
 								.list-group.list-group-flush
 									a(href='#').list-group-item
@@ -65,7 +72,7 @@ block content
 										img(src='../assets/images/developer.svg')
 									.col-md-9
 										h4 developer guides
-										p these articles are about development basics
+										p.text-muted These articles are about development basics
 							.card-body
 								.list-group.list-group-flush
 									a(href='#').list-group-item
@@ -85,7 +92,7 @@ block content
 										img(src='../assets/images/api.svg')
 									.col-md-9
 										h4 API
-										p all about working with the API
+										p.text-muted All about working with the API
 							.card-body
 								.list-group.list-group-flush
 									a(href='#').list-group-item
@@ -110,13 +117,14 @@ block content
 							.card-body
 								p roadmap trading platform
 					.col-md-6
-						h4 new articles
+						h4 new articles&nbsp;
+							i.fas.fa-asterisk
 						a(href='#').card
+							span.new-notification new
 							.card-body
-								span.new-notification.sticky-top new
 								p how to add funnel
 						a(href='#').card
+							span.new-notification new
 							.card-body
-								span.new-notification.sticky-top new
 								p epics
 

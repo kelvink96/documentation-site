@@ -1,25 +1,36 @@
 .sidebar
   height: 100vh
-  padding-top: 1em
-  padding-left: 1em
-  padding-right: 1em
+  position: fixed
+  width: 25vw
+  padding: 2em 1em
 
   h4
-    text-align: center
+    color: $color-dark-blue
     text-transform: capitalize
+    text-align: center
 
   .list-group
     .list-group-item
       padding-top: .65em
       padding-bottom: .65em
+      color: $color-dark-blue
+      text-decoration: none
+      text-transform: capitalize
 
-      a
-        color: black
-        text-decoration: none
-        text-transform: capitalize
-
-        i
-          margin-right: 1em
+      i
+        margin-right: .5em
 
   .sidebar-footer
     margin-top: 5em
+
+    .list-group
+      .list-group-item
+        a
+          padding-top: .65em
+          padding-bottom: .65em
+          color: $color-dark-blue
+          text-decoration: none
+          text-transform: capitalize
+
+          i
+            margin-right: .5em

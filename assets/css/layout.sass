@@ -3,6 +3,22 @@
 @import "sidebar"
 @import "list-groups"
 @import "cards"
+@import "navbar"
+@import "mixins"
+@import "buttons"
+@import "footer"
+
+body
+  font-family: 'Rubik', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  text-transform: capitalize
+
+p, a, span
+  font-size: 1em
+
+a
+  color: $color-med-blue
 
 main
   min-height: 100vh
@@ -10,8 +26,18 @@ main
   display: flex
 
 .sidebar-wrapper
-  width: 20vw
-  background-color: #f1f1f1
+  width: 25vw
+  background: linear-gradient(90deg, rgb(250, 250, 250) 0%, rgba(246, 246, 246, 1) 100%)
+  border-right: 1px solid $color-dark-blue
 
 .content-wrapper
-  width: 80vw
+  width: 75vw
+  background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgba(250, 250, 250, 1) 70%, rgba(240, 240, 240, 1) 100%)
+
+.section
+  margin: 0 0 4em 0
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .container, .p-5
+    padding: 1em !important

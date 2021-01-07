@@ -1,14 +1,16 @@
 nav.navbar.navbar-expand-lg
 	.container
-		a.navbar-brand(href='#') Document.io
+		a.navbar-brand(href='#')
+			img(src='../assets/images/manual.svg')
+			| Document.IO
 		button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
 			i.fas.fa-bars
 		.collapse.navbar-collapse#navbarSupportedContent
-			.input-group.w-50.ms-auto
+			.input-group
 				span.input-group-text
 					i.fas.fa-search
 				input(type='search' placeholder='Search by Article and Content' aria-label='Search').form-control
-			ul.navbar-nav.ms-auto
+			ul.navbar-nav
 				li.nav-item.dropdown
 					a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle="dropdown" aria-expanded="false")
 						span.flag-icon.flag-icon-us.me-1
@@ -16,19 +18,19 @@ nav.navbar.navbar-expand-lg
 					ul.dropdown-menu(aria-labelledby="navbarDropdown")
 						li
 							a.dropdown-item(href='#')
-								span.flag-icon.flag-icon-fr.me-1
+								span.flag-icon.flag-icon-fr
 								| fra
 						li
 							a.dropdown-item(href='#')
-								span.flag-icon.flag-icon-es.me-1
+								span.flag-icon.flag-icon-es
 								| spa
 						li
 							a.dropdown-item(href='#')
-								span.flag-icon.flag-icon-it.me-1
+								span.flag-icon.flag-icon-it
 								| ita
 						li
 							a.dropdown-item(href='#')
-								span.flag-icon.flag-icon-cn.me-1
+								span.flag-icon.flag-icon-cn
 								| chn
 				li.nav-item
 					a.nav-link(href='home.html')

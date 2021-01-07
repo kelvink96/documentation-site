@@ -1,0 +1,55 @@
+nav, .navbar
+  border-bottom: 1px solid $color-dark-blue
+  height: 80px
+  background-color: white
+
+  .navbar-brand
+    color: $color-med-blue
+    font-size: 1.2em
+    font-weight: 500
+    text-transform: uppercase
+
+    img
+      width: 50px
+      height: 50px
+      object-fit: contain
+      margin-right: .5em
+
+  .navbar-collapse
+    .input-group
+      margin-left: auto
+      width: 40%
+
+    .navbar-nav
+      margin-left: auto
+
+      a
+        text-transform: uppercase
+        color: $color-med-blue
+
+      .flag-icon
+        margin-right: .5em
+
+      .nav-item
+        margin: 0 .15em
+
+        .nav-link
+          border: 1px solid transparent
+
+          &:hover,
+          &:focus
+            color: $color-dark-blue
+            border-bottom: 1px solid $color-dark-blue
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  nav, .navbar
+    .navbar-collapse
+      padding: 1em
+
+      .input-group
+        width: 100%
+        margin: .5em 0
+
+      .nav-link
+        margin: .25em 0

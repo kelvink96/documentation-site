@@ -1,17 +1,30 @@
+@import "mixins"
+@import "colors"
+
 .hero-section
   .image-wrapper
     text-align: center
 
     img
-      width: 60%
+      width: 50%
       height: auto
       object-fit: contain
+
+  .text-wrapper
+    p
+      font-size: 1.2em
+
+    button
+      @include box-shadow-sm
 
 .features-section
   .card
     padding: 1em
 
     .card-header
+      p
+        margin-bottom: 0
+
       .col-md-3
         text-align: center
 
@@ -27,3 +40,26 @@
 
           i
             margin-right: .5em
+
+.articles-section
+  h4
+    margin-bottom: 1em
+
+    i
+      color: $color-med-blue
+
+  .card
+    text-decoration: none
+
+    .card-body
+      p
+        margin: .35em 0
+        text-transform: capitalize
+
+    .new-notification
+      background-color: #D5E3FF
+      width: 50px
+      text-align: center
+      position: absolute
+      right: 0
+      border-bottom-left-radius: 5px

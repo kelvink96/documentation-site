@@ -1,6 +1,12 @@
 .card
-  background-color: transparent
+  background-color: white
   margin-bottom: 1.5em
 
   .card-header
-    background-color: transparent
+    background-color: white
+
+  &:hover,
+  &:focus
+    @include box-shadow-md
+    @include transition
+    border-color: $color-dark-blue
