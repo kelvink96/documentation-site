@@ -112,6 +112,11 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover, nav .navbar-collapse
   color: #003399;
   border-bottom: 1px solid #003399;
 }
+nav .navbar-collapse .navbar-nav .nav-item .active, .navbar .navbar-collapse .navbar-nav .nav-item .active {
+  border: 1px solid #003399;
+  background-color: #003399;
+  color: white;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
